@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoriaActivity">
+
+    <ImageView
+        android:id="@+id/btnAnterior_hist"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="34dp"
+        android:rotation="-90"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowfixed_left" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="252dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbNota"
+        app:srcCompat="@drawable/date_txtlayout" />
+
+    <EditText
+        android:id="@+id/txtDia_hist"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Dia"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <EditText
+        android:id="@+id/txtMes_hist"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Mês"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <EditText
+        android:id="@+id/txtAno_hist"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ano"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="265dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:srcCompat="@drawable/textbox" />
+
+    <EditText
+        android:id="@+id/txtPesquisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:hint="Pesquisa"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="324dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomydrepa" />
+
+    <CheckBox
+        android:id="@+id/ckbNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/red_200"
+        android:text="Nota"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/red_200"
+        android:textCursorDrawable="@drawable/arrowfixed_updown_red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <CheckBox
+        android:id="@+id/ckbDor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@color/red_200"
+        android:text="Dor"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/red_200"
+        android:textCursorDrawable="@drawable/arrowfixed_updown_red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="355dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@drawable/utlimoregisto" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        tools:listitem="@layout/item_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EcraPrincipalActivity">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="277dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomydrepa" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Bem-vindo"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/lblUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:text="User"
+        android:textColor="@color/red_200"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/btnAddRegisto"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDiario"
+        app:layout_constraintStart_toStartOf="@+id/btnDiario"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiario"
+        app:srcCompat="@drawable/btnaddregisto" />
+
+    <ImageView
+        android:id="@+id/btnPerfil"
+        android:layout_width="149dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/btnperfil" />
+
+    <ImageView
+        android:id="@+id/btnDiario"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/btndi_rio" />
+
+    <ImageView
+        android:id="@+id/btnTerminarSess"
+        android:layout_width="268dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="560dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/btnterminarsessao" />
+
+    <ImageView
+        android:id="@+id/btnMedicacao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddRegisto"
+        app:srcCompat="@drawable/btnmedicacao" />
+
+    <ImageView
+        android:id="@+id/btnHistorico"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddRegisto"
+        app:layout_constraintStart_toStartOf="@+id/btnPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil"
+        app:srcCompat="@drawable/btnhistoria" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

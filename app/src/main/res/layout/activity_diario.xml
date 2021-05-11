@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiarioActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="289dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomydrepa" />
+
+    <ImageView
+        android:id="@+id/btnAnterior_diario"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowfixed_left" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="351dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/registos_label" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        tools:listitem="@layout/item_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="252dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/date_txtlayout" />
+
+    <EditText
+        android:id="@+id/txtDia_diario"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Dia"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+    <EditText
+        android:id="@+id/txtMes_diario"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Mês"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+    <EditText
+        android:id="@+id/txtAno_diario"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ano"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
