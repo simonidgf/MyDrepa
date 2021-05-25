@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MyDrepa">
         <activity android:name=".SugestaoActivity"></activity>
         <activity android:name=".HistoriaActivity" />
-        <activity android:name=".medicacao.MedicacaoActivity" />
+        <activity android:name=".MedicacaoActivity" />
         <activity android:name=".NotaRegistoActivity" />
         <activity android:name=".DorRegistoActivity" />
         <activity android:name=".PerfilActivity" />

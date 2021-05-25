@@ -9,11 +9,6 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
-    configurations {
-        cleanedAnnotations
-        compile.exclude group: 'org.jetbrains' , module:'annotations'
-    }
-
     defaultConfig {
         applicationId "com.mydrepa"
         minSdkVersion 24
@@ -42,19 +37,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    packagingOptions {
-        // pickFirst "META-INF/DEPENDENCIES"
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/license.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/notice.txt'
-        exclude 'META-INF/ASL2.0'
-        exclude("META-INF/*.kotlin_module")
-    }
 }
 
 dependencies {
@@ -66,10 +48,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.room:room-runtime:2.4.0-alpha01'
-    implementation 'androidx.room:room-compiler:2.4.0-alpha02'
+    implementation 'androidx.room:room-runtime:2.4.0-alpha02'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    kapt 'android.arch.persistence.room:compiler:2.0.0-alpha1'
 }

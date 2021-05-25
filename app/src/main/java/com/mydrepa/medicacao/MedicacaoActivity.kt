@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.mydrepa.EcraPrincipalActivity
 import com.mydrepa.R
 import com.mydrepa.medicacao.db.MedicacaoEntity
@@ -34,7 +35,8 @@ class MedicacaoActivity : AppCompatActivity(), RowClickListener {
         /////////
 
         //DB
-        recyclerView.apply {
+        val rv = findViewById<RecyclerView>(R.id.recyclerView3)
+        rv.apply {
             layoutManager=LinearLayoutManager(this@MedicacaoActivity)
             recyclerViewAdapter_med = RecyclerAdapter_medicacao(this@MedicacaoActivity)
             adapter = recyclerViewAdapter_med
@@ -54,6 +56,10 @@ class MedicacaoActivity : AppCompatActivity(), RowClickListener {
 
             var med = MedicacaoEntity(0, medicamento_nome, data1, data2)
             viewModel.insertMedicamentoInfo(med)
+
+            txtNome_medicamento.setText("")
+            txtDose1.setText("")
+            txtDose2.setText("")
         }
     }
 

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mydrepa.R
 import com.mydrepa.medicacao.db.MedicacaoEntity
 import kotlinx.android.synthetic.main.activity_medicacao.view.*
+import kotlinx.android.synthetic.main.item_layout_medicacao.view.*
 
 class RecyclerAdapter_medicacao(val listener: RowClickListener): RecyclerView.Adapter<RecyclerAdapter_medicacao.MyViewHolder>(){
 
@@ -37,7 +38,7 @@ class RecyclerAdapter_medicacao(val listener: RowClickListener): RecyclerView.Ad
         var medicamento = view.txtNome_medicamento.toString()
         var data1 = view.txtDose1.toString()
         var data2 = view.txtDose2.toString()
-        var deleteMed = view.btnDelete_medicamento
+        var deleteMed = view.btnMedicacaoDelete
 
         fun bind(data: MedicacaoEntity){
             medicamento = data.nome_medicamento
