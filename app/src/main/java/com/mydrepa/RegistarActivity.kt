@@ -24,6 +24,7 @@ class RegistarActivity : AppCompatActivity() {
         criar_conta.setOnClickListener(){
             val i = Intent(this@RegistarActivity, MainActivity::class.java)
             startActivity(i)
+
         }
         ///////////////////////////
     }
