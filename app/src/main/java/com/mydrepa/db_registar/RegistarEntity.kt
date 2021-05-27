@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "users")
 data class RegistarEntity(
-    @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id : Int = 0,
+    @PrimaryKey(autoGenerate = false) @ColumnInfo(name = "id") val id : String = "",
     @ColumnInfo(name = "nome") val nome: String = "",
     @ColumnInfo(name = "apelido") val apelido: String = "",
     @ColumnInfo(name = "genero") val genero: String = "",

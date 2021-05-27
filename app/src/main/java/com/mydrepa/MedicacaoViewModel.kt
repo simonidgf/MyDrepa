@@ -41,6 +41,4 @@ class MedicacaoViewModel(app: Application): AndroidViewModel(app) {
         medicaDao?.deleteMedicamento(entity)
         getAllUsers()
     }
-
-
 }
